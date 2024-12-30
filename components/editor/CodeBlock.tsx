@@ -289,13 +289,11 @@ export default function CodeBlock({
             lineProps={(lineNumber: number) => {
               const isHighlighted = highlightedLines?.includes(lineNumber);
 
-              const style: React.CSSProperties = {
-                paddingRight: '2rem'
-              };
+              const style: React.CSSProperties={};
 
               if (isHighlighted) {
                 style.display = 'block';
-                style.width = '100%';
+                style.width = '100vw';
                 style.backgroundColor = '#3e4d64';
               }
 
